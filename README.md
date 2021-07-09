@@ -1,7 +1,7 @@
 # Maven Demo
 
 ## Maven create release branch
-`mvn release:branch -DbranchName=release/1.0`
+` mvn --batch-mode release:branch -DbranchName="release/1.0"`
 
 Creating a branch involves the following release phases:
 
@@ -14,7 +14,7 @@ Bump the version in the POMs if you want to change it to a new value y-SNAPSHOT 
 Commit the modified POMs
 
 ## Maven perform a release
-`mvn --batch-mode release:prepare release:perform -DreleaseVersion=1.6.2 -DdevelopmentVersion=1.6.3-SNAPSHOT`
+`mvn --batch-mode release:prepare release:perform -DreleaseVersion="1.6.2" -DdevelopmentVersion="1.6.3-SNAPSHOT"`
 
 `--batch-mode`, run mvn command in batch mode, to prevent the Release Plugin from prompting the user for any information\
 `-DreleaseVersion=1.6.2`, set release version\
