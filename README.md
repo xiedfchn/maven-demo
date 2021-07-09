@@ -13,7 +13,7 @@ Bump the version in the POMs if you want to change it to a new value y-SNAPSHOT 
 Commit the modified POMs
 
 ## Maven perform a release
-`mvn --batch-mode release:prepare release:perform -DreleaseVersion="1.0" -DdevelopmentVersion="1.0.1-SNAPSHOT" -Dtag="v1.0 -Dmaven.deploy.skip=true" -Dusername -Dpassword`
+`mvn --batch-mode release:prepare release:perform -DreleaseVersion="1.0.3" -DdevelopmentVersion="1.0.4-SNAPSHOT" -Dtag="v1.0.3" -Dusername="" -Dpassword=""`
 
 `--batch-mode`, run mvn command in batch mode, to prevent the Release Plugin from prompting the user for any information\
 `-DreleaseVersion=1.6.2`, set release version\
