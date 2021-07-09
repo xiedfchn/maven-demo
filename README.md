@@ -1,8 +1,7 @@
 # Maven Demo
 
 ## Maven create release branch
-` mvn --batch-mode release:branch -DbranchName="release/1.0"`
-
+` mvn --batch-mode release:branch -DbranchName="release/1.0" -Dusername -Dpassword`
 Creating a branch involves the following release phases:
 
 Check that there are no uncommitted changes in the sources
